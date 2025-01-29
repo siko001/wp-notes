@@ -13,12 +13,10 @@ A nonce is a security token used in WordPress to protect your site from certain 
 ##### Example:
 
 ```php
-<?php
 // Generate a nonce
 $nonce = wp_create_nonce('my_nonce_action');
-?>
 
-// Create a link with the nonce included
+<!-- Create a link with the nonce included -->
 <a href="<?= admin_url('admin-post.php?action=my_action&nonce=' . $nonce) ?>">Click to Perform Action</a>'
 ```
 
@@ -31,8 +29,6 @@ wp_create_nonce('my_nonce_action') generates a nonce that’s tied to the my_non
 ##### Example: Verifying the Nonce on the Server
 
 ```php
-
-<?php
 // Action handler for the nonce link
 add_action('admin_post_my_action', 'handle_my_action');
 
@@ -47,7 +43,6 @@ function handle_my_action() {
     }
     wp_die(); // Always call wp_die() after the request is processed
 }
-?>
 ```
 
 ##### Explanation:
