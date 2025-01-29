@@ -2,10 +2,6 @@
 ---
 
 ### 📜 **Main `README.md`**
-Your main `README.md` in the root can **list all the topics**:
-
-📄 `README.md`
-```md
 # WordPress Developer Notes 📖
 
 This repository contains structured notes on key WordPress topics.
