@@ -80,7 +80,7 @@ $modified_text = apply_filters('my_custom_filter', 'Initial Text');
 echo $modified_text;
 ```
 
-This triggers the filter and passes 'Initial Text' to the hooked functions.
+This triggers the filter and passes 'Initial Text' to the hooked functions as a variable.
 
 -   add_filter() — Hook a Function to a Filter
 -   add_filter() is used to hook a function to a specific filter. The function modifies the data before it's used or returned.
@@ -95,6 +95,8 @@ function modify_text($text) {
     return $text . ' - Modified by the filter!';
 }
 ```
+
+if another filter is added to my_custom_filter the new variable text passed will be 'Initial Text - Modified by the filter!'
 
 ##### Breakdown:
 
@@ -163,10 +165,11 @@ If you apply the filter to some content, the output will be:
 
 ```js
 This is the original content. - Filter One Applied - Filter Two Applied
-Full Example: Using Both Actions and Filters
 ```
 
-#### Example with Action and Filter Together
+#### Full Example: Using Both Actions and Filters
+
+##### Example with Action and Filter Together
 
 ```php
 // Action Hook: Do something when the action is triggered
