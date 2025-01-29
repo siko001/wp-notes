@@ -55,7 +55,7 @@ The form data is gathered using FormData(form), which collects all form inputs (
 We also append the nonce (for security) and the action parameter to the form data before sending it to the server.
 
 ##### Example:
-```
+```php
 formData.append('security', myAjax.nonce); // Adds the nonce for security
 formData.append('action', 'my_ajax_action'); // Action hook to tell WordPress what AJAX action to run 
 ```
@@ -67,7 +67,7 @@ This ensures the request is secure and processed by WordPress through the specif
 The fetch() method sends the AJAX request to admin-ajax.php, the WordPress AJAX handler.
 
 ##### Example:
-```
+```js
 fetch(myAjax.ajaxurl, {
     method: 'POST',
     body: formData,  // Sends the form data
@@ -91,7 +91,7 @@ A success or error message is displayed based on the response.
 WordPress processes the request on the server-side using the wp_ajax_{action} hooks. Here's how to handle the AJAX request:
 
 ##### Example:
-```
+```php
 add_action('wp_ajax_my_ajax_action', 'my_ajax_function'); // For logged-in users
 add_action('wp_ajax_nopriv_my_ajax_action', 'my_ajax_function'); // For non-logged-in users
 
@@ -122,7 +122,7 @@ A success or failure response is sent back to the JavaScript code.
 Once the AJAX request is processed by the server, JavaScript handles the response and displays appropriate messages.
 
 ##### Example:
-```
+```js
 .then(response => response.json())  // Converts the response to JSON
 .then(data => {
     if (data.success) {
