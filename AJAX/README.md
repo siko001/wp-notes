@@ -41,7 +41,7 @@ Normally, when a form is submitted, the page reloads, and the data is sent to th
 JavaScript listens for the form’s submit event and prevents the default form submission.
 
 ##### Example:
-```
+```js
 form.addEventListener('submit', function(event) {
     event.preventDefault();  // Prevent the form from submitting in the usual way (no page reload)
 });
