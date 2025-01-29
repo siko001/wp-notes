@@ -1,5 +1,3 @@
----
-
 ### WordPress Nonce Example
 
 #### Overview
@@ -57,5 +55,9 @@ wp_verify_nonce($\_GET['nonce'], 'my_nonce_action') checks the validity of the n
 -   Include the nonce in the request: Add the nonce to your URL or form (in the case of a form, use a hidden input).
 -   Verify the nonce: When the request is made, use wp_verify_nonce() on the server side to ensure the request is legitimate.
 -   Proceed with the action: If the nonce is valid, perform the action (e.g., save data, perform an operation); if invalid, display an error.
--   Conclusion
--   This simple example demonstrates how to create and verify a nonce in WordPress. By using nonces, you ensure that actions on your website are secure and only triggered by legitimate requests. Always verify nonces when processing actions to prevent unauthorized activity.
+
+---
+
+### Conclusion
+
+This simple example demonstrates how to create and verify a nonce in WordPress. By using nonces, you ensure that actions on your website are secure and only triggered by legitimate requests. Always verify nonces when processing actions to prevent unauthorized activity.

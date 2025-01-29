@@ -9,7 +9,7 @@ This repository contains structured notes on key WordPress topics.
 ## 📂 Topics
 - [AJAX in WordPress](AJAX/README.md)
 - [Understanding Nonces](nonce/README.md)
-- [Creating Custom REST API Routes](custom-routes/README.md)
+- [Creating Custom REST API Routes](api-custom-routes/README.md)
 - [Security Best Practices](security/README.md)
 - [Building Custom Gutenberg Blocks](blocks/README.md)
 
