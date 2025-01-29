@@ -78,6 +78,8 @@ Filters allow you to modify data before it’s used or displayed.
 // Apply the filter with a parameter
 $modified_text = apply_filters('my_custom_filter', 'Initial Text');
 echo $modified_text;
+
+// output: Initial Text
 ```
 
 This triggers the filter and passes 'Initial Text' to the hooked functions as a variable.
@@ -94,6 +96,8 @@ add_filter('my_custom_filter', 'modify_text', 10, 1);
 function modify_text($text) {
     return $text . ' - Modified by the filter!';
 }
+
+// Output: Initial Text - Modified by the filter!
 ```
 
 if another filter is added to my_custom_filter the new variable text passed will be 'Initial Text - Modified by the filter!'
