@@ -25,7 +25,7 @@
 
 Brain of the theme, setup anything we need to have avaliable under any templates
 
--   #### 📁 Components
+-   #### 📁 [Components](components/readme.md)
     Data to be passed into said component
 
 ```go
@@ -37,9 +37,9 @@ wp acorn make:component ExampleComponent
     -   #### App.php
     -   Data to be passed into view before rendering
 
--   ##### filters.php
+-   ##### [filters.php](filters/readme.md)
 
-    -   this will contain all the filters and actions for the different wordpress hooks. -examples in [filters.php](filters/readme.md)
+    -   this will contain all the filters and actions for the different wordpress hooks.
 
 -   ##### setup.php
     -   this will have all the handling of enqueueing all the scripts and styles, theme support, and all theme related things. (usually found in regular functions.php)
