@@ -26,12 +26,11 @@
 Brain of the theme, setup anything we need to have avaliable under any templates
 
 -   #### 📁 Components
+    Data to be passed into said component
 
 ```go
 wp acorn make:component ExampleComponent
 ```
-
-    - Data to be passed into said component
 
 -   #### 📁 Composers
 
