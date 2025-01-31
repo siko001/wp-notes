@@ -6,8 +6,8 @@
 -   yarn / npm install
 -   update the config file bud / vite (sage 10.8+)
 -   Install acorn inside theme dir / plugin
--   -   Add Acorn's post autoload dump function
--   -   composer.json
+    -   Add Acorn's post autoload dump function
+    -   composer.json
 
 ```json
 "scripts": {
@@ -27,15 +27,22 @@ Brain of the theme, setup anything we need to have avaliable under any templates
 
 -   #### 📁 Components
 
+```go
+wp acorn make:component ExampleComponent
+```
+    - Data to be passed into said component
+
 -   #### 📁 Composers
--   -   #### App.php
--   -   Data to be passed into view before rendering
+
+    -   #### App.php
+    -   Data to be passed into view before rendering
 
 -   ##### filters.php
--   -   this will contain all the filters and actions for the different wordpress hooks. -examples in [filters.php](filters/readme.md)
+
+    -   this will contain all the filters and actions for the different wordpress hooks. -examples in [filters.php](filters/readme.md)
 
 -   ##### setup.php
--   -   this will have all the handling of enqueueing all the scripts and styles, theme support, and all theme related things. (usually found in regular functions.php)
+    -   this will have all the handling of enqueueing all the scripts and styles, theme support, and all theme related things. (usually found in regular functions.php)
 
 ### 📁 public
 
@@ -70,18 +77,18 @@ Where theme default images are place
 theme default JS files
 
 -   ##### editor
--   -   editor.js (to be built)
+    -   editor.js (to be built)
 -   ##### app
--   -   app.js (to be built)
+    -   app.js (to be built)
 
 #### 📁 styles
 
 theme default CSS files
 
 -   ##### editor
--   -   editor.css (to be built)
+    -   editor.css (to be built)
 -   ##### app
--   -   app.css (to be built)
+    -   app.css (to be built)
 
 #### 📁 views
 
@@ -92,12 +99,13 @@ PHP blade view templates
 -   ##### 📁 forms
 
 -   ##### 📁 layouts
--   -   Has the layout of the whole theme, it is possble to create other layouts increase a page has a different layout
+
+    -   Has the layout of the whole theme, it is possble to create other layouts increase a page has a different layout
 
 -   ##### 📁 partials
 
 -   ##### 📁 sections
--   -   Has all sections being using inside of the layout or that will be used through mutiple files
+    -   Has all sections being using inside of the layout or that will be used through mutiple files
 
 Bootstraping means, loading all minimum necessary depenedencies for a system to operate and be functional
 
@@ -111,3 +119,4 @@ Bootstraping means, loading all minimum necessary depenedencies for a system to 
 -   [ACF Composer](https://github.com/Log1x/acf-composer)
 -   [ACF Builder Cheatsheet](https://github.com/Log1x/acf-builder-cheatsheet)
 -   [Sage Directives](https://log1x.github.io/sage-directives-docs/)
+-   [Blade Templating and Directives](https://laravel.com/docs/11.x/blade#blade-directives)
